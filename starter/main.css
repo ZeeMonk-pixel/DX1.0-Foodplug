@@ -91,6 +91,13 @@ span a{
 
 /* faq section ends here  */
 
+.smart-line{
+    /* border: 3px solid tomato; */
+    height: 60px;
+    width: 90%;
+    background: var(--main-color);
+    margin: 20px auto;
+}
 
 /* cta section starts here  */
 
