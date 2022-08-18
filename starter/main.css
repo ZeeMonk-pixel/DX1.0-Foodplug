@@ -9,6 +9,10 @@
     src: url(./font/Lato-Regular.ttf)format('truetype'),url(./font/Lato-Bold.ttf)format('truetype'),url(./font/lato-regular-webfont.woff)format('woff'),url(./font/lato-regular-webfont.woff2)format('woff2');
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     /* font-family: 'Lato', sans-serif; */
     height: 1500px;
@@ -30,6 +34,15 @@ padding: 15px 20px;
     color: var(--main-color);
 }
 
+.btn-light{
+    border: 2px solid var(--main-color);
+    background: transparent;
+}
+
+.btn-light:hover{
+    color: var(--main-color)
+}
+
 button a{
     color: var(--white-color);
     text-decoration: none;
@@ -43,11 +56,195 @@ span a{
 
 /* reusables end  */
 
-/* start here  */
-/* end here   */
+/* nav section starts here */
+
+.nav-desktop{
+    position: fixed;
+    width: 100%;
+    background: var(--white-color);
+}
+
+.header-logo{
+    top: 0;
+    left: 60px;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: var(--main-color);
+    width: 100px;
+    height: 100px;
+    color: var(--white-color);
+    font-size: 50px;
+}
+
+.link-holder{
+    /* border: 3px solid tomato; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link-holder button{
+    margin-left: 20px;
+}
+
+.link-holder button:hover{
+    color: var(--main-color);
+}
+
+.link-holder ul{
+    display: flex;
+    width: 500px;
+    /* border: 3px solid black; */
+}
+
+.link-holder li{
+    list-style: none; 
+    border: 2px solid var(--white-color);
+}
+
+.link-holder li:hover{
+    border: 2px solid var(--main-color);
+}
+
+.header-links{
+    display: block;
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+/* nav section ends here */
+
+/* header section start here  */
+
+.header-banner{
+    /* border: 3px solid tomato; */
+    padding-top: 130px;
+    padding-bottom: 30px;
+    /* height: 450px; */
+    background: url('./img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.header-banner__container{
+    height: 100%;
+    /* border: 3px solid black; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-banner-content{
+    /* border: 3px solid blue; */
+    width: 50%;
+}
+
+.header-banner-content h1{
+    color: var(--main-color-dark);
+    font-size: 45px;
+    line-height: 1.1;
+    font-weight: 300;
+}
+
+.header-banner-content p{
+    margin: 20px 0;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.header__counter{
+    display: flex;
+    background: var(--main-color);
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.counter-item{
+    width: 180px;
+    /* height: 90px; */
+    /* border: 3px solid var(--white-color); */
+    text-align: center;
+    color: var(--white-color);
+}
+.counter-item h2{
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+/* header section end here  */
+
 
  /* about us section start here  */
+
+.about-us__card-container{
+    /* border: 3px solid tomato; */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.about-us__card-imageholder{
+    border-radius: 30px;
+    height: 350px;
+    width: 48%;
+    /* border: 3px solid black; */
+    overflow: hidden;
+}
+
+.about-us__card-imageholder img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.about-us__text-contentholder{
+    width: 48%;
+    height: 350px;
+    /* border: 3px solid blue; */
+}
+
+.about-us__text-contentholder ul{
+    margin-bottom: 20px;
+}
+
+.about-us__text-contentholder li{
+    list-style: none;
+}
+
+.check-icon{
+    color: var(--main-color);
+    margin-right: 15px;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.about-us__text-contentholder h2{
+    color: var(--main-color);
+    background: var(--light-text-color);
+    border-left: 5px solid var(--main-color);
+    border-right: 5px solid var(--main-color);
+    padding: 10px;
+    font-size: 28px;
+}
+
+.about-us__text-contentholder p{
+     margin: 20px 0;
+     line-height: 1.5;
+    
+}
+
+.cardicon{
+    margin-left: 10px;
+}
+
+
  .about-us__banner-holder{
+    padding: 30px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -61,10 +258,16 @@ span a{
  }
  .about-us__banner-holder h2{
     color: var(--main-color);
+    font-size: 28px;
+    border-left: 5px solid var(--main-color);
+    border-right: 5px solid var(--main-color);
+    width: 98%;
  }
+
  .about-us__banner-holder p{
     margin: 20px 0;
     width: 98%;
+    line-height: 1.5;
  }
 
  .btn-waves{
