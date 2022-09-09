@@ -15,10 +15,7 @@
 </head>
 
 
-<body>
-
-<main>
-
+<body>    
     <!-- header section start here -->
 
     <header>
@@ -35,13 +32,14 @@
                 <div class="menu-bars"></div>
             </div>
             <div class="mobile__link-holder">
-                <ul>
-                    <li><a href="#" class="mobile__header-links active-link">Home</a></li>
-                    <li><a href="#aboutus" class="mobile__header-links">About Us</a></li>
-                    <li><a href="#explorefoods" class="mobile__header-links">Explore Foods</a></li>
-                    <li><a href="#faq" class="mobile__header-links">FAQ</a></li>
+                <ul> 
+                    <li><a href="" class="mobile__header-links blank__mobile-link"></a></li>
+                    <li><a href="#" class="mobile__header-links active-link" onclick="Addclass()">Home</a></li>
+                    <li><a href="#aboutus" class="mobile__header-links" onclick="Addclass()">About Us</a></li>
+                    <li><a href="#explorefoods" class="mobile__header-links" onclick="Addclass()">Explore Foods</a></li>
+                    <li><a href="#faq" class="mobile__header-links" onclick="Addclass()">FAQ</a></li>
                 </ul>
-                <button class="btn">+1 (000) XXX-XXXX</button>
+                <button class="btn"><a href="#contact" onclick="Addclass()">+1 (000) XXX-XXXX</a></button>
             </div>
             
 
@@ -107,6 +105,9 @@
 
 
     <!-- header section end here  -->
+
+<main>
+
 
     <!--about us section start here -->
 
@@ -261,7 +262,7 @@
 
     <!-- footer section starts here  -->
     <footer>
-        <div class="footer-copyright">
+        <div class="footer-copyright" id="contact">
             &copy; 2022 Foodplug, built by Gabriel Asha at DX1.0 Bootcamp
         </div>
 
@@ -273,7 +274,7 @@
             
             </span>
             <span class="footer-icons">
-                <a href="https://twitter.com/Zeemonk1" target="_blank">
+                <a href="https://twitter.com/MonkG_I" target="_blank">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
             

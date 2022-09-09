@@ -166,6 +166,10 @@ span a{
     color: var(--white-color);
     margin-left: 15px;
 }
+.blank__mobile-link{
+    /* margin: 5px; */
+    background: white;
+}
 
 .mobile__link-holder li{
     list-style: none;
