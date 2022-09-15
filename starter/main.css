@@ -114,7 +114,7 @@ span a{
 }
 
 .menu-bars{
-    height: 3px;
+    height: 2px;
     background: var(--white-color);
     width: 100%;
     position: relative;
@@ -126,16 +126,16 @@ span a{
     background: var(--white-color);
     position: absolute;
     width: 100%;
-    height: 3px;
+    height: 2px;
     transition: all .5s ease-in-out;
 }
 
 .menu-bars::before{
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .menu-bars::after{
-    transform: translateY(10px);
+    transform: translateY(5px);
 }
 
 .show .menu-bars{
